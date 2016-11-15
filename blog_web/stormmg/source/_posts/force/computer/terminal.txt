@@ -1,0 +1,7 @@
+1.shortcuts
+
+	Create a new terminal window: ctrl + shift + n
+	Create a new terminal tab: ctrl + shift + t
+	Close a single terminal tab or window: ctrl + d
+	Switch between terminal windows: alt + `
+	Switch between terminal tabs: ctrl + pg dn (left), ctrl + pg up (right), or alt + tab#, e.g. alt + 1

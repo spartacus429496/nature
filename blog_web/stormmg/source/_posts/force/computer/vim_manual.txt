@@ -1,0 +1,7 @@
+^M in dos and unix
+1.vim -b dosfile.txt
+2.set fileformat=unix
+  set ff=unix
+3.:%s///g //ctrl+v ctrl+M
+4.delete whitespace at the end of lines
+	:%s/\s\+$//g

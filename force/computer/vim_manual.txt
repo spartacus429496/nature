@@ -3,3 +3,5 @@
 2.set fileformat=unix
   set ff=unix
 3.:%s///g //ctrl+v ctrl+M
+4.delete whitespace at the end of lines
+	:%s/\s\+$//g
