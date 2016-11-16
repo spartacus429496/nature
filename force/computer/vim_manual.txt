@@ -5,3 +5,9 @@
 3.:%s///g //ctrl+v ctrl+M
 4.delete whitespace at the end of lines
 	:%s/\s\+$//g
+5. quickfix window
+	$HOME/.vimrc
+	set cscopequickfix=c-,d-,e-,g-,i-,s-,t-
+nmap <C-n> :cnext<CR>
+nmap <C-p> :cprev<CR>
+nmap <C-t> :colder<CR>:cc<CR>

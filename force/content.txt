@@ -4,6 +4,11 @@ creator: jack storm Mg
 example: ace reese
 otis, axis lux,
 
+moto: feel the  force inside
+may force with you
+Vis naturalis
+naturae
+
 articles:
 1.The symblic universe --enster kasil
 2.What is life ? -- schdinger

@@ -1,7 +1,93 @@
-1.shortcuts
+1. terminal
+	1.1 shortcuts
+		Create a new terminal window: ctrl + shift + n
+		Create a new terminal tab: ctrl + shift + t
+		Close a single terminal tab or window: ctrl + d
+		Switch between terminal windows: alt + `
+		Switch between terminal tabs: ctrl + pg dn (left), ctrl + pg up (right), or alt + tab#, e.g. alt + 1
 
-	Create a new terminal window: ctrl + shift + n
-	Create a new terminal tab: ctrl + shift + t
-	Close a single terminal tab or window: ctrl + d
-	Switch between terminal windows: alt + `
-	Switch between terminal tabs: ctrl + pg dn (left), ctrl + pg up (right), or alt + tab#, e.g. alt + 1
+	1.3 terminal profile
+		a Gnome Terminal profile:
+	1.2 color
+		1.2.1 setting  256 color
+		1.2.2 solarized
+			git clone git://github.com/sigurdga/gnome-terminal-colors-solarized.git
+
+2. Shell
+cat /etc/shells
+2.1 zsh
+	2.1.1 install
+		sudo apt-get install zsh
+		or download source , ./configure make make install
+	2.1.2 set switch
+		echo $0
+		echo $$
+		ps -p "$$"
+		cat /etc/shells
+		chsh -s /usr/local/bin/zsh or /bin/zsh
+		vim /etc/passwd //root zsh
+		sudo usermod -s /bin/zsh username // /usr/local/bin/zsh
+	2.1.3 oh my zsh
+		wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | sh
+		or manaul
+		git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+		cp ~/.oh-my-zsh/templates/zshrc.zsh-template ~/.zshrc
+
+	2.4 setting
+		~/.zshrc
+	2.4.1 dircolor
+
+		git clone git://github.com/seebi/dircolors-solarized.git
+		cp dircolors.ansi-universal ~/.dircolors
+		eval `dircolors .dircolors` //in ~/.zshrc
+
+	2.4.2 themes
+		#ZSH_THEME="robbyrussell"
+		ZSH_THEME="agnoster"
+
+		//agnoster code error
+		~~~
+		wget https://raw.githubusercontent.com/powerline/powerline/develop/font/10-powerline-symbols.conf
+		wget https://raw.githubusercontent.com/powerline/powerline/develop/font/PowerlineSymbols.otf
+		sudo cp 10-powerline-symbols.conf /usr/share/fonts/OTF/
+		sudo mv 10-powerline-symbols.conf /etc/fonts/conf.d/
+		sudo mv PowerlineSymbols.otf /usr/share/fonts/OTF/
+		~~~
+3.vim
+	3.1 .vimrc
+	3.2 ~/.vim/colors
+		solarized.vim
+	3.3 plugin
+
+├── colors
+│   └── solarized.vim
+└── plugin
+    └── cscope_maps.vim
+
+4. colors
+	4.1 solarized colors
+		http://ethanschoonover.com/solarized
+
+	4.2 themes for GNU ls
+		This is a repository of themes for GNU ls (configured via GNU dircolors) that support Ethan Schoonover’s Solarized color scheme. http://ethanschoonover.com/solarized
+
+		https://github.com/seebi/dircolors-solarized
+
+	4.3 Solarized Colorscheme for Gnome Terminal
+		Solarized Gnome Terminal colors, based on http://ethanschoonover.com/solarized
+		https://github.com/Anthony25/gnome-terminal-colors-solarized
+	4.4 pure -- Pretty, minimal and fast ZSH prompt
+		https://github.com/sindresorhus/pure
+		oh-my-zsh
+		    Symlink (or copy) pure.zsh to ~/.oh-my-zsh/custom/themes/pure.zsh-theme.  //themes/..
+		    Set ZSH_THEME="pure" in your .zshrc file.
+	4.5 Fish shell like syntax highlighting for Zsh.
+		https://github.com/zsh-users/zsh-syntax-highlighting.git
+		readme.md install.md
+		git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+		    echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+
+6.cscope
+
+
+
